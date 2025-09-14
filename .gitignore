@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+proj.win32/
 
 # Compiled Object files
 *.slo
