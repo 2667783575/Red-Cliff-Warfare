@@ -20,10 +20,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          style: "./Classes"
+          style: file
           files-changed-only: false
           thread-comments: false
-
+          ignore: 'Classes/*'
       - name: Fail fast?!
         if: steps.linter.outputs.checks-failed != 0
         run: |
