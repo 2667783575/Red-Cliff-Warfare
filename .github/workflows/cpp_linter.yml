@@ -23,9 +23,9 @@ jobs:
           style: file
           files-changed-only: false
           thread-comments: false
-          ignore: "Classes/*"
-          ignore-tidy: "Classes/*"
-          ignore-format: "Classes/*"
+          ignore: "cocos2d/*"
+          ignore-tidy: "cocos2d/*"
+          ignore-format: "cocos2d/*"
 
       - name: Fail fast?!
         if: steps.linter.outputs.checks-failed != 0
