@@ -23,6 +23,9 @@ jobs:
           style: file
           files-changed-only: false
           thread-comments: false
+          ignore: "Classes/*"
+          ignore-tidy: "Classes/*"
+          ignore-format: "Classes/*"
 
       - name: Fail fast?!
         if: steps.linter.outputs.checks-failed != 0
